@@ -6,12 +6,15 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .header {
     width: 70%;
     height: 80px;
     /* background: #404EED; */
     padding: 0 40px;
+
 
     display: flex;
     justify-content: space-evenly;
