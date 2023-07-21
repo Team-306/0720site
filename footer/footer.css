@@ -13,11 +13,41 @@ footer .container {
     margin: 0 auto;
     padding:0 40px;
     display: flex;
+    gap: 5%;
     /* background: aqua; */
 }
 footer .container .box1{
     flex: 2;
+    display: flex;
+    flex-direction: column;
     /* background: red; */
+
+}
+footer .container .box1 .country a{
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    gap: 5px;
+}
+footer .container .box1 .country .img1{
+    /* width: 20px; */
+    /* border: 1px solid #fff; */
+    height: 15px;
+    width: 20%;
+    background: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2Fdata30%2F2008%2F8%2F17%2F128%2F%25C5%25C2%25B1%25D8%25B1%25E2_qjrtmtlatlxl.gif&type=sc960_832_gif)no-repeat center /contain;
+}
+footer .container .box1 .country .fa-chevron-down{
+font-size: 0.5em;
+}
+footer .container .box1 .icons{
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 footer .container .box2{
     /* background: orange; */
@@ -54,6 +84,9 @@ footer .foot .logo{
     height: 23px;
     background: url(../img/Discord-icon.jpg)no-repeat center/cover;
 }
+footer .foot a{
+    display: block;
+}
 footer .foot .join{
     width: 80px;
     height: 40px;
@@ -65,5 +98,5 @@ footer .foot .join{
     font-size: 0.9em;
 }
 footer .foot .join:hover{
-    
+    background: rgb(88, 101, 242);
 }
