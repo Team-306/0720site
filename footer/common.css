@@ -1,6 +1,9 @@
 /* 리셋 css포함시키기 */
 @import url(https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css);
 
+/* fontawesome css */
+@import url('../fontawesome/css/all.min.css');
+
 *{
     box-sizing: border-box;
 }
