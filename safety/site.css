@@ -1,5 +1,6 @@
 
 @import url("../footer/footer.css");
+@import url('https://cdn.linearicons.com/free/1.0.0/icon-font.min.css');
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 /* header style start */
 * {
@@ -55,6 +56,9 @@
 }
 .header .main-menu li {
   margin-right: 30px;
+}
+.header .mobile-menu{
+  display: none;
 }
 
 /* header style end */
@@ -285,3 +289,155 @@ border-radius: 15px;
   background: url(https://assets-global.website-files.com/6257adef93867e50d84d30e2/64900f0e31939bc0f725f0b2_2306_SCL_Tile_News.svg) no-repeat center/cover;
 }
 
+
+/* 모바일 */
+@media screen and (max-width: 414px) {
+  .header{
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header .main-menu{
+      display: none;
+  }
+  .header .main-logo{
+    margin: 0;
+    order: -10;
+  }
+  .header .mobile-menu{
+    display: block;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  /* main */
+  #Safety{
+    height: auto;
+  }
+  #Safety .container1{
+    height: 26vh;
+    padding-top: 80px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  #Safety .container1 .box1{
+    margin: 0;
+    height: auto;
+    padding-left: 60px;
+  }
+  #Safety .container1 .box1 .txt p{
+    display: none;
+  }
+  #Safety .container1 .box1 .txt h1{
+    /* display: none; */
+    font-size: 28px;
+  }
+  #Safety .container1 .box1 .img{
+    display: none;
+  }
+  #Safety .container1 .box2{
+    width: 100%;
+    font-size: 13px;
+    /* margin: 0; */
+    margin-top: 3vh;
+    height: 5vh;
+  }
+  #Safety .container1 .box2 ul a{
+    height: inherit;
+  }
+  #Safety .container1 .box2 ul a li{
+    height: inherit;
+  }
+
+  #Safety .container2{
+    height: 60vh;
+  }
+  #Safety .container2 .section{
+    position: relative;
+    height: 55vh;
+  }
+  #Safety .container2 .box1{
+    display: none;
+  }
+  #Safety .container2 .box3{
+    display: none;
+  }
+  #Safety .container2 .box2 h2{
+    font-size: 35px;
+    margin-bottom: 8vh;
+  }
+  #Safety .container2 .box2 p{
+    font-size: 15px;
+    text-align: justify;
+    padding: 5%;
+    margin-bottom: 10%;
+  }
+  #Safety .container2 .box2 .txt{
+    width: 40%;
+  }
+  #Safety .container3{
+    padding-top: 10px;
+    height: 1300px;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+  }
+  #Safety .container3 .content {
+    height: 95%;
+  }
+  #Safety .container3 .content .box{
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+  }
+  #Safety .container3 .content .box .box1{
+    width: 60%;
+    order: -1;
+    text-align: center;
+  }
+  #Safety .container3 .content .box .box1 .box-foot{
+    justify-content: center;
+  }
+  #Safety .container3 .content .box .box2{
+    width: 60%;
+  }
+  #Safety .container3 .content .box .box1 h3{
+    font-size: 22px;
+  }
+  #Safety .container3 .content .box .box1 p{
+    display: none;
+  }
+  #Safety .container3 .content .box1:first-child{
+    align-self: flex-end;
+  } 
+   #Safety .container3 .content .box2:last-child{
+    align-self: flex-end;
+  }
+  #Safety .container3 .content .box1:last-child{
+    align-self: flex-start;
+  } 
+   #Safety .container3 .content .box2:first-child{
+    align-self: flex-start;
+  }
+  footer{
+    height: auto;
+    padding-top: 10px;
+  }
+  footer .container{
+    display: none;
+  }
+  footer .foot{
+    border: none;
+    /* padding-top: 10px; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  footer .foot .join{
+    position: absolute;
+    align-self: flex-end;
+    order: -1;
+    top: -70px;
+  }
+}
